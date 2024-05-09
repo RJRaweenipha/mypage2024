@@ -1,58 +1,40 @@
-body{
-    background-color: #BADEE4;
-    align-items: center;
-}
-
-.profile{
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    padding: 20px;
-}
-
-.profileImg>img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.profileImg {
-    display: flex;
-    width: 165px;
-    height: 165px;
-    background-color: azure;
-    border-radius: 50%;
     justify-content: center;
     align-items: center;
-    
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9
 }
 
-.profileText {
-    padding: 10px;
+p {
+    display: block;
 }
 
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+.quiz-container {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
-thead,
-tfoot {
-    background-color: rgb(228 240 245);
-}
-
-th,
-td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-}
-
-tfoot th {
-    text-align: right;
-}
-
-.skills > table, tr, td {
+.button {
+    background-color: #007BFF;
+    color: white;
     border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
