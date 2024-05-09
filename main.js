@@ -10,6 +10,7 @@ function checkAnswer1(answer) {
     } else {
         resultElement.textContent = 'Incorrect!';
         resultElement.style.color = 'red';
+        score1 = 0;
     }
     checkTotalScore();
 }
@@ -23,20 +24,21 @@ function checkAnswer2(answer) {
     } else {
         resultElement.textContent = 'Incorrect!';
         resultElement.style.color = 'red';
+        score2 = 0;
     }
     checkTotalScore();
 }
 
 function checkTotalScore() {
-    var totalScore = score1 + score2;
-    var resultElement = document.getElementById('result3');
-    if (resultElement !== null) {
-        resultElement.textContent = 'Total Score: ' + totalScore;
-        if (totalScore === 2) {
-            score1 = 0;
-            score2 = 0;
-            resultElement.textContent = 'Your total score is 2. You are a genius!';
-        } 
-    } 
-}
+    var resultElement3 = document.getElementById('result3');
 
+    var totalScore = score1 + score2;
+    resultElement3.textContent = 'Total Score: ' + totalScore;
+
+    if (totalScore === 2) {
+        score1 = 0;
+        score2 = 0;
+        resultElement3.textContent = 'Your total score is 2. You are a genius!';
+    } 
+
+}
